@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: grok2api
+    env: docker
+    plan: free
+    image:
+      url: ghcr.io/jiujiu532/grok2api:latest
+    envVars:
+      - key: PORT
+        value: 3000
